@@ -26,7 +26,7 @@ int main()
     count(intrandnumber, number);
     for(int i = 0; i != 10; i++)
         cout << "十位数为 " << i << " 的个数: " << number[i] << endl;
-
+system("pause");
 
     // cout << "Hello world!" << endl;
     return 0;
