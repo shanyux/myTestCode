@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1490688942 source:c:\users\syx\documents\mycode\primes\main.cpp
+	<iostream>
+	<cstdlib>
+	<cmath>
+
