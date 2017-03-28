@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1490706470 source:c:\users\syx\documents\mycode\ramcount\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<ctime>
+
