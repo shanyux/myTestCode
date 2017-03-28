@@ -24,6 +24,7 @@ int main()
     int number = primes(a, b);
     cout << "素数个数" << number;
     system("pause");
+
     return 0;
 }
 bool prime(int num)//素数
