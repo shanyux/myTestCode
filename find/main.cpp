@@ -43,5 +43,6 @@ int main()
         else
             cout << "Î´²éÕÒµ½Êı×Ö" << endl;
     }
+    system("pause");
     return 0;
 }
