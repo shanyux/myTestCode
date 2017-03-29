@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1490789322 source:c:\users\syx\documents\mycode\find\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
