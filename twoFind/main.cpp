@@ -1,3 +1,4 @@
+//问题描述：二分法遍历查找，从100个随机函数中（100-999）查找指定数字的位置
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -77,5 +78,6 @@ int main()
     cin >> pnumber;
     int pos = twofind(intnumarr, pnumber, 0, MAX-1);
     cout << "位置：" << pos << endl;
+    system("pause");
     return 0;
 }
