@@ -21,9 +21,10 @@ int main()
     cout << "ÇëÊäÈë×Ö·û£º" << endl;
     cin >> ch;
     int length = strlen(ch);
-   // cout << length << sizeof(ch) << endl;;
+    // cout << length << sizeof(ch) << endl;;
     reverse(ch, 0, length-1);
     for(int i=0; i<length; i++)
         cout<<ch[i];
+    system("pause");
     return 0;
 }
