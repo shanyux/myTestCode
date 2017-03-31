@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1490928708 source:c:\users\syx\documents\mycode\twofind\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
