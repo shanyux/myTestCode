@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1490941133 source:c:\users\syx\documents\mycode\charcat\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+
