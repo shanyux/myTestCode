@@ -1,3 +1,5 @@
+//第一种方法
+
 //#include <iostream>
 //#include <cmath>
 //
@@ -65,7 +67,7 @@
 //}
 //
 
-
+//第二种方法
 
 #include <iostream>
 #include <cmath>
