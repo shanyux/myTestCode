@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1491025172 source:c:\users\syx\documents\mycode\gray\main.cpp
+	<iostream>
+	<cmath>
+	<vector>
+
