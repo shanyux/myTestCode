@@ -38,7 +38,7 @@ int main()
     if(leap(year) && day > 29)
         flag = false;
     if(!leap(year) && day > 28)
-        return false;
+        flag = false;
     while(!flag)
     {
         flag = true;
@@ -49,7 +49,7 @@ int main()
         if((leap(year) && day > 29))
             flag = false;
         if(!leap(year) && day > 28)
-            return false;
+            flag = false;
     }
     cout << "µÚ" << days(year, month, day) << "Ìì" <<endl;
 
