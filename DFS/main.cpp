@@ -20,7 +20,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-static int visit[11];
+//static int visit[11];
 static int arr[11];
 void DFS(int n, int cur, int r)
 {
@@ -28,19 +28,19 @@ void DFS(int n, int cur, int r)
         return;
     for (int i = n; i > 0 ; i--)
     {
-        if (!visit[i])
+        // if (!visit[i])
+        //  {
+        // visit[i] = 1;
+        arr[cur] = i;
+        if (cur == r)
         {
-            visit[i] = 1;
-            arr[cur] = i;
-            if (cur == r)
-            {
-                for (int i = 1; i < r + 1; i++)
-                    cout << arr[i];
-                cout << endl;
-            }
-            DFS(i - 1, cur + 1, r);
-            visit[i] = 0;
+            for (int i = 1; i < r + 1; i++)
+                cout << arr[i];
+            cout << endl;
         }
+        DFS(i - 1, cur + 1, r);
+        //  visit[i] = 0;
+        //   }
     }
 }
 int main()
@@ -66,5 +66,5 @@ int main()
 
     }
     DFS(n, 1, r);
-        return 0;
+    return 0;
 }

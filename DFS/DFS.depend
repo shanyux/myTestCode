@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1491189264 source:c:\users\syx\documents\mycode\dfs\main.cpp
+	<iostream>
+	<cstring>
+
