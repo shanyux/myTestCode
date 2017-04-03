@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1491227935 source:c:\users\syx\documents\mycode\split\main.cpp
+	<iostream>
+	<string>
+	<vector>
+
