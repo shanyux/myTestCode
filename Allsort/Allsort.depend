@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1491467547 source:c:\users\syx\documents\mycode\allsort\main.cpp
+	<iostream>
+	<vector>
+	"allsort.h"
+	<windows.h>
+	<functional>
+	<algorithm>
+
+1491467658 c:\users\syx\documents\mycode\allsort\allsort.h
+	<iostream>
+	<vector>
+	<cstdlib>
+	<ctime>
+
