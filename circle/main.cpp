@@ -1,49 +1,43 @@
-//N¸öÈËÎ§³ÉÒ»È¦£¬´ÓµÚÒ»¸ö¿ªÊ¼±¨Êý£¬µÚM¸ö½«³ö¾Ö£¬×îºóÊ£ÏÂÒ»¸ö£¬ÆäÓàÈË¶¼½«³ö¾Ö¡£
+// Nï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½Ò»È¦ï¿½ï¿½ï¿½Óµï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½
 #include <iostream>
 
 using namespace std;
 
-struct linknode
-{
-    int num = 0;
-    linknode *next = nullptr;
+struct linknode {
+  int num = 0;
+  linknode *next = nullptr;
 };
-int circle(int persion, int number)
-{
-    linknode *head, *tail;
-    head = tail = new linknode;
-//    head->num = i;
-    for(int i = 1; i < persion; i++)
-    {
-        tail->num = i;
-        tail->next = new linknode;
-        tail = tail->next;
+int circle(int persion, int number) {
+  linknode *head, *tail;
+  head = tail = new linknode;
+  //    head->num = i;
+  for (int i = 1; i < persion; i++) {
+    tail->num = i;
+    tail->next = new linknode;
+    tail = tail->next;
+  }
+  tail->num = persion;
+  tail->next = head;
+  while (head != tail) {
+    for (int i = 1; i < number; i++) {
+      tail = head;
+      head = head->next;
     }
-    tail->num = persion;
-    tail->next = head;
-    while (head != tail)
-    {
-        for (int i= 1; i < number; i++){
-            tail = head;
-            head = head->next;
-        }
-        tail->next = head->next;
-        cout << "±àºÅ" <<head->num << "³ö¾Ö" <<endl;
-        delete head;
-        head = tail->next;
-   //     head = tail;
-    }
-    return head->num;
+    tail->next = head->next;
+    cout << "ï¿½ï¿½ï¿½" << head->num << "ï¿½ï¿½ï¿½ï¿½" << endl;
     delete head;
-
+    head = tail->next;
+    //     head = tail;
+  }
+  return head->num;
+  delete head;
 }
 
-int main()
-{
-    int person = 0, number = 0;
-    cout << "ÇëÊäÈëÈËÊýºÍ³öÁÐÊý×Ö£º" << endl;
-    cin >> person >> number;
-    int winner = circle(person, number);
-    cout << "×îÖÕ»ñÊ¤µÄÊÇ±àºÅ£º" << winner << endl;
-    return 0;
+int main() {
+  int person = 0, number = 0;
+  cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½" << endl;
+  cin >> person >> number;
+  int winner = circle(person, number);
+  cout << "ï¿½ï¿½ï¿½Õ»ï¿½Ê¤ï¿½ï¿½ï¿½Ç±ï¿½Å£ï¿½" << winner << endl;
+  return 0;
 }
